@@ -1,11 +1,10 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-export default function OlaMundo(props) {
+export default function Componente() {
     return (
         <View>
-            <Text>Olá, </Text>
-            <Text> {props.nome} ! </Text>
+            <Text style={StyleSheet.text}>Componente</Text>
         </View>
     );
 }
