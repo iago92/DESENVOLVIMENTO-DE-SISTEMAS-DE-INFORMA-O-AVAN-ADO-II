@@ -1,13 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import HomeScreen from './src/screens/HomeScreen';
-import { SafeAreaView } from 'react-native-web';
+import 'react-native-gesture-handler';
+import 'react-native-reanimated';
+import { NavigationContainer } from "@react-navigation/native";
+import DrawerModalNavigator from './src/navigation/DrawerModalNavigator';
 
 export default function App() {
   return (
-    <SafeAreaView>
-
-      <HomeScreen />
-    </SafeAreaView>
+    <NavigationContainer>
+      <DrawerModalNavigator />
+    </NavigationContainer>
   );
 }

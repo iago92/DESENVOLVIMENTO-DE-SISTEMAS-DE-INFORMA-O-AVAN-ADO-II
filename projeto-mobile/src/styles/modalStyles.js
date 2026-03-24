@@ -1,90 +1,79 @@
 import { StyleSheet } from "react-native";
 
-export const styles = StyleSheet.create({
-
+export const modalStyles = StyleSheet.create({
   screenContainer: { 
-    flex: 1,                    
-    justifyContent: 'center',    
-    alignItems: 'center',        
-    padding: 20                  
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20
   },
-
 
   headerText: { 
-    fontSize: 24,               
-    fontWeight: '900',          
-    marginBottom: 20            
+    fontSize: 24,
+    fontWeight: '900',
+    marginBottom: 20
   },
-
 
   mainButton: { 
-    paddingVertical: 15,        
-    paddingHorizontal: 30,      
-    borderRadius: 12,           
-    elevation: 4                
+    paddingVertical: 15,
+    paddingHorizontal: 30,
+    borderRadius: 12,
+    elevation: 4
   },
-
 
   buttonText: { 
-    color: '#fff',             
-    fontSize: 16,               
-    fontWeight: 'bold'         
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold'
   },
-
 
   modalOverlay: { 
-    flex: 1,                    
-    backgroundColor: 'rgba(0, 0, 0, 0.7)', 
-    justifyContent: 'center',    
-    alignItems: 'center'         
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
-
 
   modalCard: { 
-    width: '80%',               
-    backgroundColor: '#fff',     
-    borderRadius: 20,           
-    padding: 25,                
-    alignItems: 'center',       
-    overflow: 'hidden'          
+    width: '80%',
+    backgroundColor: '#fff',
+    borderRadius: 20,
+    padding: 25,
+    alignItems: 'center',
+    overflow: 'hidden'
   },
-
 
   colorIndicator: { 
-    width: '120%',              
-    height: 10,                 
-    position: 'absolute',       
-    top: 0                      
+    width: '120%',
+    height: 10,
+    position: 'absolute',
+    top: 0
   },
 
-  
   modalTitle: { 
-    fontSize: 22,               
-    fontWeight: 'bold',        
-    marginTop: 15,             
-    marginBottom: 10            
+    fontSize: 22,
+    fontWeight: 'bold',
+    marginTop: 15,
+    marginBottom: 10
   },
-
 
   modalBody: { 
-    fontSize: 16,              
-    textAlign: 'center',        
-    color: '#666',            
-    marginBottom: 20          
+    fontSize: 16,
+    textAlign: 'center',
+    color: '#666',
+    marginBottom: 20
   },
-
 
   closeButton: { 
-    borderWidth: 1,             
-    borderColor: '#ddd',       
-    paddingVertical: 10,        
-    paddingHorizontal: 20,      
-    borderRadius: 8           
+    borderWidth: 1,
+    borderColor: '#ddd',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 8
   },
 
- 
   closeButtonText: { 
-    color: '#666',             
-    fontWeight: 'bold'          
+    color: '#666',
+    fontWeight: 'bold'
   },
 });

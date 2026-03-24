@@ -1,18 +1,26 @@
-import { NavigationContainer } from "@react-navigation/native";
-import ModalFadeScreen from "../screens/modals/ModalFadeScreen";
-import ModalNoneScreen from "../screens/modals/ModalNoneScreen";
-import ModalSlideScreen from "../screens/modals/ModalSlideScreen";
+import React from 'react';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import HomeScreen from '../screens/HomeScreen';
+import ModalTabsNavigator from './ModalTabsNavigator';
+import ScrollTabsNavigator from './ScrollTabsNavigator';
+
+const Drawer = createDrawerNavigator();
 
 export default function DrawerModalNavigator() {
     return (
-        <NavigationContainer>   
-            <Drawer.Navigator>
-                <Drawer.Screen name="Home" component={HomeScreen} />
-                <Drawer.Screen name="Modal Fade" component={ModalFadeScreen} />
-                <Drawer.Screen name="Modal None" component={ModalNoneScreen} />
-                <Drawer.Screen name="Modal Slide" component={ModalSlideScreen} />
+        <Drawer.Navigator
+            initialRouteName="Home"
+            screenOptions={{
+                drawerStyle: { width: 240 },
+                headerStyle: { backgroundColor: '#2196F3' },
+                headerTintColor: '#fff',
+            }}
+        >
+            <Drawer.Screen name="Home" component={HomeScreen} />
 
-            </Drawer.Navigator>
-        </NavigationContainer>
+            <Drawer.Screen name="Modais" component={ModalTabsNavigator} />
+
+            <Drawer.Screen name="Listas de Scroll" component={ScrollTabsNavigator} />
+        </Drawer.Navigator>
     );
 }

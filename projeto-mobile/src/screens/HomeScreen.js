@@ -1,22 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import DrawerModalNavigator from '../navigation/DrawerModalNavigator';
+import { View, Text, StyleSheet } from 'react-native';
+import { homeStyles } from '../styles/homeStyles';
 
 export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Text>Bem-vindo ao aplicativo. Utilize o menu de navegação para acessar as telas de modais e as listas com rolagem.</Text>
-      
-      <StatusBar style="auto" />
+    <View style={homeStyles.container}>
+      <Text style={homeStyles.title}>Atividade Avaliativa 01</Text>
+      <Text style={homeStyles.subtitle}>
+        Desenvolvimento de Sistemas II
+      </Text>
+      <View style={homeStyles.subtitle}>
+        <Text style={homeStyles.subtitle}>
+          Explore os recursos de Modais e Listas (FlatList, SectionList e ScrollView) 
+          através do menu lateral e das abas inferiores.
+        </Text>
+      </View>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
