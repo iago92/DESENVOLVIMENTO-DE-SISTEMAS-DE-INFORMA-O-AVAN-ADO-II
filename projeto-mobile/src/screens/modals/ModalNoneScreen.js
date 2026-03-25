@@ -17,7 +17,7 @@ export default function ModalNoneScreen() {
             </TouchableOpacity>
 
             <Modal
-                animationtype="none"
+                animationType="none"
                 transparent={true}
                 visible={visible}
                 onRequestClose={() => setVisible(false)}

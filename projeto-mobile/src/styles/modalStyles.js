@@ -22,7 +22,7 @@ export const modalStyles = StyleSheet.create({
   },
 
   buttonText: { 
-    color: '#fff',
+    color: '#202020',
     fontSize: 16,
     fontWeight: 'bold'
   },

@@ -17,7 +17,7 @@ export default function ModalSlideScreen() {
             </TouchableOpacity>
 
             <Modal
-                animationtype="slide"
+                animationType="slide"
                 transparent={true}
                 visible={visible}
                 onRequestClose={() => setVisible(false)}

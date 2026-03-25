@@ -17,7 +17,7 @@ export default function ModalFadeScreen() {
             </TouchableOpacity>
 
             <Modal
-                animationtype="fade"
+                animationType="fade"
                 transparent={true}
                 visible={visible}
                 onRequestClose={() => setVisible(false)}
