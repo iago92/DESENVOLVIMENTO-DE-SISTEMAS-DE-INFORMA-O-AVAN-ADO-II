@@ -9,7 +9,7 @@ export default function ModalNoneScreen() {
 
     return (
         <SafeAreaView style={modalStyles.screenContainer}>
-            <CustomButton title="Abrir Modal None" onPress={() => setVisible(true)} />
+            <CustomButton title="Abrir Modal None" onPress={() => setVisible(true)} color={'#99eb63'} />
             <Modal
                 animationType="none"
                 transparent={true}

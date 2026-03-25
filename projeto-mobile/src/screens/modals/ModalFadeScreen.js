@@ -9,7 +9,7 @@ export default function ModalFadeScreen() {
 
     return (
         <SafeAreaView style={modalStyles.screenContainer}>
-            <CustomButton title="Abrir Modal Fade" onPress={() => setVisible(true)} />
+            <CustomButton title="Abrir Modal Fade" onPress={() => setVisible(true)} color={'#9edce6'} />
             <Modal
                 animationType="fade"
                 transparent={true}

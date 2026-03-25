@@ -9,7 +9,7 @@ export default function ModalSlideScreen() {
 
     return (
         <SafeAreaView style={modalStyles.screenContainer}>
-            <CustomButton title="Abrir Modal Slide" onPress={() => setVisible(true)} />
+            <CustomButton title="Abrir Modal Slide" onPress={() => setVisible(true)} color={'#eb6963'} />
             <Modal
                 animationType="slide"
                 transparent={true}
