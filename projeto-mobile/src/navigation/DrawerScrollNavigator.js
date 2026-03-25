@@ -9,7 +9,7 @@ const Drawer = createDrawerNavigator();
 export default function DrawerModalNavigator() {
     return (
         <Drawer.Navigator
-            initialRouteName="Início"
+            initialRouteName="Inicio"
             screenOptions={{
                 drawerStyle: { width: 250 },
                 headerStyle: { backgroundColor: '#2196F3' },
@@ -17,19 +17,19 @@ export default function DrawerModalNavigator() {
             }}
         >
             <Drawer.Screen
-                name="Início"
+                name="Inicio"
                 component={HomeScreen}
-                options={{ title: '🏠 Home' }}
+                options={{ title: 'Home' }}
             />
             <Drawer.Screen
-                name="ModaisFlow"
+                name="Modal"
                 component={ModalTabsNavigator}
-                options={{ title: '📱 Exemplos de Modais' }}
+                options={{ title: 'Modal' }}
             />
             <Drawer.Screen
-                name="ScrollFlow"
+                name="Scroll"
                 component={ScrollTabsNavigator}
-                options={{ title: '📜 Listas de Rolagem' }}
+                options={{ title: 'Scroll' }}
             />
         </Drawer.Navigator>
     );

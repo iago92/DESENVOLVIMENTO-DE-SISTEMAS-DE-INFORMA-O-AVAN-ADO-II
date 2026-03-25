@@ -8,7 +8,7 @@ const Stack = createStackNavigator();
 export default function AppNavigator() {
     return (
         <Stack.Navigator screenOptions={{ headerShown: false }}>
-            <Stack.Screen name="MainDrawer" component={ScrollTabsNavigator} />
+            <Stack.Screen name="MainDrawer" component={DrawerModalNavigator} />
         </Stack.Navigator>
     );
 }

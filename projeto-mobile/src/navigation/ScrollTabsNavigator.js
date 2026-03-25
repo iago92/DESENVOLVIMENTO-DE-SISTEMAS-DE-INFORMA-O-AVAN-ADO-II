@@ -12,7 +12,6 @@ export default function ScrollTabsNavigator() {
             screenOptions={{
                 headerShown: false,
                 tabBarActiveTintColor: '#4CAF50',
-                tabBarInactiveTintColor: 'gray',
                 tabBarStyle: { backgroundColor: '#fff', height: 60, paddingBottom: 5 }
             }}
         >

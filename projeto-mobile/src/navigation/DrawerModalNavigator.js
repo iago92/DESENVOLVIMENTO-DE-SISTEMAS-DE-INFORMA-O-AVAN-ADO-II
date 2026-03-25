@@ -17,10 +17,8 @@ export default function DrawerModalNavigator() {
             }}
         >
             <Drawer.Screen name="Home" component={HomeScreen} />
-
-            <Drawer.Screen name="Modais" component={ModalTabsNavigator} />
-
-            <Drawer.Screen name="Listas de Scroll" component={ScrollTabsNavigator} />
+            <Drawer.Screen name="Modal" component={ModalTabsNavigator} />
+            <Drawer.Screen name="Scroll" component={ScrollTabsNavigator} />
         </Drawer.Navigator>
     );
 }

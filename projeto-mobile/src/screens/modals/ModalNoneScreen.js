@@ -2,20 +2,14 @@ import { useState } from "react";
 import { Text, TouchableOpacity, View, Modal } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { modalStyles } from "../../styles/modalStyles";
+import CustomButton from "../../components/CustomButton";
 
 export default function ModalNoneScreen() {
     const [visible, setVisible] = useState(false);
 
     return (
         <SafeAreaView style={modalStyles.screenContainer}>
-            <TouchableOpacity
-                onPress={() => setVisible(true)}
-                style={modalStyles.mainButton}
-            >
-                <Text style={modalStyles.buttonText}
-                >Abrir Modal None</Text>
-            </TouchableOpacity>
-
+            <CustomButton title="Abrir Modal None" onPress={() => setVisible(true)} />
             <Modal
                 animationType="none"
                 transparent={true}

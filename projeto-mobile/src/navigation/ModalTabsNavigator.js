@@ -12,7 +12,7 @@ export default function ModalTabsNavigator() {
             screenOptions={{
                 headerShown: false,
                 tabBarActiveTintColor: '#2196F3',
-                tabBarInactiveTintColor: 'gray',
+                tabBarStyle: { backgroundColor: '#fff', height: 60, paddingBottom: 5 }
             }}
         >
             <Tab.Screen name="Fade" component={ModalFadeScreen} />

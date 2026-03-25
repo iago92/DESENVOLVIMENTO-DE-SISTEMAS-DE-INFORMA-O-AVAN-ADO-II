@@ -2,20 +2,14 @@ import { useState } from "react";
 import { Text, TouchableOpacity, View, Modal } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { modalStyles } from "../../styles/modalStyles";
+import CustomButton from "../../components/CustomButton";
 
 export default function ModalFadeScreen() {
     const [visible, setVisible] = useState(false);
 
     return (
         <SafeAreaView style={modalStyles.screenContainer}>
-            <TouchableOpacity
-                onPress={() => setVisible(true)}
-                style={modalStyles.mainButton}
-            >
-                <Text style={modalStyles.buttonText}
-                >Abrir Modal Fade</Text>
-            </TouchableOpacity>
-
+            <CustomButton title="Abrir Modal Fade" onPress={() => setVisible(true)} />
             <Modal
                 animationType="fade"
                 transparent={true}
