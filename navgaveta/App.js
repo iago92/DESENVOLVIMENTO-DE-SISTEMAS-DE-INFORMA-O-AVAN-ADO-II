@@ -1,29 +1,19 @@
-import React from 'react';
-import { View, Text } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-const Drawer = createDrawerNavigator();
-function HomeScreen() {
-return (
-<View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-<Text>Home Screen</Text>
-</View>
-);
-}
-function ProfileScreen() {
-return (
-<View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-<Text>Profile Screen</Text>
-</View>
-);
-}
-export default function App() {
-return (
-<NavigationContainer>
-<Drawer.Navigator>
-<Drawer.Screen name="Home" component={HomeScreen} />
-<Drawer.Screen name="Profile" component={ProfileScreen} />
-</Drawer.Navigator>
-</NavigationContainer>
-);
-}
+import { NavigationContainer } from "@react-navigation/native";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+
+
+const Drawer = createDrawerNavigator()
+
+export default funtion App() {
+    return(
+        <NavigationContainer>
+            <Drawer.Navigator>
+                <Drawer.Screen name= "Questao 4" component={Questao4}/>
+                <Drawer.Screen name= "Questao 5" component={Questao5}/>
+                <Drawer.Screen name= "Questao 8" component={Questao8}/>
+                <Drawer.Screen name= "Questao 10" component={Questao10}/>
+                <Drawer.Screen name= "Questao 12" component={Questao12}/>
+            </Drawer.Navigator>
+        </NavigationContainer>
+    );
+};
